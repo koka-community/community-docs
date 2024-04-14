@@ -12,6 +12,7 @@ Documentation for the Community (Guidelines, Rules, Organization, Licensing)
 - Add your name to the authors file when contributing.
 - Add the repository to the `koka-community` repository as a submodule, and the corresponding include path to the compiler flags in the `.vscode/settings.json` in that repository.
 - Select 2 people to be reviewers / owners of the repository, so that they can share the responsibility to help merge PRs and review code. This way hopefully no one is waiting forever for a single person to be available.
+- Copy the ruleset (https://github.com/koka-community/template/settings/rules) to the new repository to enforce some of the rules.
 
 ### Pull Requests and Merging
 - Get a review from at least one other person before merging. Owners can get an exception to this rule, so they can publish fixes, without being hassled by procedure. If no one reviews your PR within a few days, contact @TimWhiting.
@@ -33,10 +34,22 @@ Documentation for the Community (Guidelines, Rules, Organization, Licensing)
 - Help each other out
 - Ask questions
 - Contribute
-- Don't be afraid of making mistakes, correct them as quick as possible.
+- Don't be afraid of making mistakes, correct them as quick as possible
+- Always allow having multiple similar APIs side by side
+  - This allows us to gain experience to know which one is best, or which to recommend
+  - If possible provide benchmarks and comparisions to allow us to objectively and subjectively assess and compare the APIs
+- Don't be afraid to make breaking changes, but try to minimize them.
+  - If you do make a breaking change, make sure to 
+    - Update the documentation and tests
+    - Add a note in the changelog with the parent commit hash, so that users can checkout a compatible commit
+    - Provide some information on how to migrate from the old API to the new one if possible
 - Scripts should be written in Koka not any other scripting language
-- Other languages should be kept to a minimum (other than interfacing with C, JS, WASM), but those should be kept to a minimum as well. Exceptions are made on a repository by repository basis.
-- Static websites should first consider using madoko - an extended Markdown format with lots of extra features. (see https://github.com/koka-community/koka-docs for an example, and http://madoko.org/reference.html for the madoko reference).
+- Other languages should be kept to a minimum
+  - Interfacing with C, JS, WASM is fine but should be kept to a minimum as well
+  - Exceptions are made on a repository by repository basis
+- Static websites should first consider using madoko - an extended Markdown format with lots of extra features. 
+  - See https://github.com/koka-community/koka-docs for an example
+  - See http://madoko.org/reference.html for the madoko reference.
 
 
 ## Organization
