@@ -12,7 +12,6 @@ Documentation for the Community (Guidelines, Rules, Organization, Licensing)
 - Add your name to the authors file when contributing.
 - Add the repository to the `koka-community` repository as a submodule, and the corresponding include path to the compiler flags in the `.vscode/settings.json` in that repository.
 - Select 2 people to be reviewers / owners of the repository, so that they can share the responsibility to help merge PRs and review code. This way hopefully no one is waiting forever for a single person to be available.
-- Copy the ruleset (https://github.com/koka-community/template/settings/rules) to the new repository to enforce some of the rules.
 
 ### Pull Requests and Merging
 - Get a review from at least one other person before merging. Owners can get an exception to this rule, so they can publish fixes, without being hassled by procedure. If no one reviews your PR within a few days, contact @TimWhiting.
